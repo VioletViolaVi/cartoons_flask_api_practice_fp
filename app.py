@@ -51,7 +51,7 @@ def add_cartoon():
 
 
 @app.errorhandler(exceptions.InternalServerError)
-def handle_500(err):
+def handle_500(error):
     return jsonify({"message": f"It's not you it's us"}, 500)
 
 
